@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orielion-costattr"
+version = "0.1.0"
+description = "按功能、用户与模型三个维度分摊成本，给出各自占比"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "orielion" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://orielion.github.io"
+Repository = "https://github.com/orielion/costattr"
+Issues = "https://github.com/orielion/costattr/issues"
+
+[project.scripts]
+costattr = "costattr:main"
+
+[tool.setuptools]
+py-modules = ["costattr"]
